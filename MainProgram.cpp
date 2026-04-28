@@ -7,6 +7,7 @@
 
 #include <iostream>
 #include <string>
+#include <math.h>
 
 // ============================================================
 // CLASS DEFINITIONS
@@ -44,10 +45,10 @@ public:
         : topLeft(x1,y1), bottomRight(x2,y2) {}  // stub — fix initializer
 
     // TODO 7: const getWidth()
-    double getWidth() const { return bottomRight.x - topLeft.x ; }  // stub
+    double getWidth() const { return abs(bottomRight.x - topLeft.x) ; }  // stub
 
     // TODO 8: const getHeight()
-    double getHeight() const { return bottomRight.y - topLeft.y; }  // stub
+    double getHeight() const { return abs(bottomRight.y - topLeft.y); }  // stub
 
     // TODO 9: const getArea()
     double getArea() const { return getWidth() * getHeight(); }  // stub

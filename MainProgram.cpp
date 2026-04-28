@@ -50,7 +50,7 @@ public:
     double getHeight() const { return bottomRight.y - topLeft.y; }  // stub
 
     // TODO 9: const getArea()
-    double getArea() const { return getWidth() * getArea(); }  // stub
+    double getArea() const { return getWidth() * getHeight(); }  // stub
 
     // TODO 10: const display()
     void display() const {
